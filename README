@@ -1,0 +1,27 @@
+This Project is Created By Scott Fischer
+
+Hi, this is a small personal project I made for my bonsai garden. It utilizes a moisture sensor and dispenses water using a brushless motor.
+I setup the pi pico to sleep until an interrupt signal from the moisture sensors. On interruption I used a function that looked for false positives from the sensor, then on pure positives it run the motor by activating a GPIO pin that is connected to the base of the transistor. The motor runs for minimum of 2 seconds or runs until the sensor deems there is enough moisture. The pi pico then returns to sleep.
+
+Hardware:
+
+  - Raspberry Pi Pico
+  - 3V Mini Water Pump (Brushless)
+  - Soil Moisture Sensor
+  - 2N2222 Transistor (1 per plant)
+
+Materials:
+  - Bonsai Saplings
+  - Pots and Soil
+  - Plywood or planter box material
+  - PVC Hose Tube
+  - Water Container (Used Tupperware)
+
+Tools:
+  - Drill
+  - Jigsaw if cutting wood
+  - Glue
+  - Motivation
+
+Software:
+  - Micropython
